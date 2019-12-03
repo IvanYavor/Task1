@@ -1,4 +1,4 @@
 package com.ua.model;
 
-public class excursionTravelPackage {
+public class excursionTravelPackage extends travelPackage{
 }

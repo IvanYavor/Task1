@@ -1,4 +1,4 @@
 package com.ua.model;
 
-public class treatmentTravelPackage {
+public class treatmentTravelPackage extends travelPackage{
 }
