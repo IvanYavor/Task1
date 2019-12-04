@@ -1,6 +1,5 @@
 package com.ua.model;
 
-import java.lang.reflect.Type;
 
 public class ShoppingTravelPackage extends TravelPackage {
     private String city;
@@ -37,7 +36,6 @@ public class ShoppingTravelPackage extends TravelPackage {
     }
 
 
-    // toString()
     @Override
     public String toString() {
         return super.toString() + " City: " + city + "; " + "Brand: " + brand + "; ";

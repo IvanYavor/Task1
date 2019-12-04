@@ -7,15 +7,30 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Controller
+ * @author Ivan Yavorsky
+ * @version 1.0
+ */
+
 public class Controller {
     private Model model;
     private View view;
 
+    /**
+     * Constructor of Controller
+     * @param model
+     * @param view
+     */
     public Controller(Model model, View view) {
         this.view = view;
         this.model = model;
     }
 
+    /**
+     * method which sort a list with shopping and cruise packages
+     * @return
+     */
     public void processUser() {
 
         List<TravelPackage> cruiseTravelPackageList = makeListOfCruises();
@@ -33,6 +48,11 @@ public class Controller {
         view.printMessage(View.SORTED_BY_TRANSPORT);
         view.printList(shoppingPackagesList);
     }
+
+    /**
+     * method which generates a list of cruise packages
+     * @return
+     */
 
     public List<TravelPackage> makeListOfCruises() {
         TravelPackage cruiseTravelPackage1 = new CruiseTravelPackage(7, 100.0, 3,  new String[] {"London", "New York"});
@@ -57,6 +77,10 @@ public class Controller {
         return travelPackageList;
     }
 
+    /**
+     * method which generates a list of shopping packages
+     * @return
+     */
     public List<TravelPackage> makeListOfShoppingPackages() {
         TravelPackage shoppingTravelPackage1 = new ShoppingTravelPackage(7, 100.0, 3, TypeOfTransport.UNKNOWN, "London", "Zaaz");
         TravelPackage shoppingTravelPackage2 = new ShoppingTravelPackage(7, 900.0, 5, TypeOfTransport.CAR, "Paris", "Z");

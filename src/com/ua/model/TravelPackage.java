@@ -83,12 +83,6 @@ public class TravelPackage implements Comparable<TravelPackage>{
         }
     }
 
-    // comparision methods
-
-//    @Override
-//    public int compareTo(TravelPackage travelPackage) {
-//        return (int) (this.getPrice() - travelPackage.getPrice());
-//    }
 
     @Override
     public int compareTo(TravelPackage travelPackage) {
@@ -97,17 +91,7 @@ public class TravelPackage implements Comparable<TravelPackage>{
         return 0;
     }
 
-//    public static Comparator<TravelPackage> TravelPackagePriceComparator =
-//                                new Comparator<TravelPackage>() {
-//                                    @Override
-//                                    public int compare(TravelPackage travelPackage1, TravelPackage travelPackage2) {
-//                                        if(travelPackage1.getPrice() < travelPackage2.getPrice()) return -1;
-//                                        if(travelPackage1.getPrice() > travelPackage2.getPrice()) return 1;
-//                                        return 0;
-//                                    }
-//                                };
-
-    //toString()
+    @Override
     public String toString() {
         return "Price " + price + "$; " + "Duration: " + durationInDays + " days; " + "Meal: " + numberOfMealsInDay + " times; " + "Transport: " + typeOfTransport + "; ";
     }

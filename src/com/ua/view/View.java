@@ -20,6 +20,5 @@ public class View {
         for(TravelPackage item : list) {
             System.out.println(item);
         }
-        //System.out.println(list);
     }
 }

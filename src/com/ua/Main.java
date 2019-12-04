@@ -1,12 +1,9 @@
 package com.ua;
 
-import com.ua.controller.*;
-import com.ua.model.*;
+import com.ua.controller.Controller;
+import com.ua.model.Model;
 import com.ua.view.View;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
